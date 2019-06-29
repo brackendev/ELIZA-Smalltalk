@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "brackendev 6/12/2019 06:52",
+	"super" : "ComposablePresenter",
+	"category" : "ELIZA-GUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"chatArea",
+		"inputArea"
+	],
+	"name" : "ELIZAGUI",
+	"type" : "normal"
+}

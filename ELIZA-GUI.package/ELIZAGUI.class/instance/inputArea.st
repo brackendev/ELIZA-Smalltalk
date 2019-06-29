@@ -1,0 +1,3 @@
+spec accessing
+inputArea
+	^ inputArea
