@@ -39,6 +39,10 @@ Or evaluate:
 ELIZA responseTo: 'Time for small talk'.
 ```
 
+## Screenshot
+
+![Screenshot](screenshot.png)
+
 ## Acknowledgements
 
 * [Joseph Weizenbaum](https://en.wikipedia.org/wiki/Joseph_Weizenbaum) for the original [ELIZA](https://en.wikipedia.org/wiki/ELIZA).
