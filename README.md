@@ -41,7 +41,7 @@ ELIZA responseTo: 'Time for small talk'.
 
 ## Screenshot
 
-<img src="https://github.com/brackendev/ELIZA-Smalltalk/blob/master/screenshot.png" alt="Screenshot" width="50%"/>
+<img src="https://github.com/brackendev/ELIZA-Smalltalk/blob/master/screenshot.png" alt="Screenshot" width="400"/>
 
 ## Acknowledgements
 
