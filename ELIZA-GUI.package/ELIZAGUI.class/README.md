@@ -1,5 +1,5 @@
 I am ELIZAGUI, an object to interact with ELIZA.
 
-Usage:
+Example invocation:
 
-ELIZAGUI start.
+	ELIZAGUI start.

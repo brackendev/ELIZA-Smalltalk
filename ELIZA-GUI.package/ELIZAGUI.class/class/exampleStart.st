@@ -1,3 +1,4 @@
 examples
 exampleStart
-self start.
+	<sampleInstance>
+	^ self start
