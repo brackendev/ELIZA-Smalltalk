@@ -1,0 +1,1 @@
+I am ELIZAExample, an object to show the capabilities of ELIZA.
