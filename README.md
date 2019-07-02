@@ -10,6 +10,7 @@ ELIZA-Smalltalk
 This implementation is based on [this Python implementation](https://www.smallsurething.com/implementing-the-famous-eliza-chatbot-in-python/) and [elizabot.js](http://www.masswerk.at/elizabot/) (for the welcome messages). There are similarly-based implementations for [Go](https://github.com/kennysong/goeliza) and [Swift](https://github.com/kennysong/SwiftEliza).
 
 * [Pharo 7.0](http://pharo.org/) reference platform.
+* Examples and tests included.
 
 ## Installation
 
@@ -29,7 +30,7 @@ In a Pharo playground, evaluate:
 
 ```smalltalk
 "Start the ELIZA chat interface"
-ELIZAGUI start.
+ELIZAGUI open.
 ```
 
 Or evaluate:
@@ -42,6 +43,8 @@ ELIZA responseTo: 'Time for small talk'.
 ## Screenshot
 
 <img src="https://github.com/brackendev/ELIZA-Smalltalk/blob/master/screenshot.png" alt="Screenshot" width="400"/>
+
+Note: "You" dialog taken from Joseph Weizenbaum's [ELIZA--A Computer Program For the Study of Natural Language Communication Between Man and Machine](http://www.universelle-automation.de/1966_Boston.pdf).
 
 ## Acknowledgements
 
