@@ -1,5 +1,5 @@
 private
-welcome
+welcomeMessage
 	| a |
 	a := Array new: 3.
 	a at: 1 put: 'Please tell me what''s been bothering you.'.
