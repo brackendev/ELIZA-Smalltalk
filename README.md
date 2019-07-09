@@ -42,7 +42,7 @@ ELIZA responseTo: 'Time for small talk'.
 
 ## Screenshot
 
-<img src="https://github.com/brackendev/ELIZA-Smalltalk/blob/master/screenshot.png" alt="Screenshot" width="400"/>
+<img src="https://github.com/brackendev/ELIZA-Smalltalk/raw/master/screenshot.png" alt="Screenshot" width="400"/>
 
 Note: "You" dialog taken from Joseph Weizenbaum's [ELIZA--A Computer Program For the Study of Natural Language Communication Between Man and Machine](http://www.universelle-automation.de/1966_Boston.pdf).
 
