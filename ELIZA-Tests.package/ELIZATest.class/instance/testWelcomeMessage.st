@@ -1,3 +1,3 @@
 test
 testWelcomeMessage
-	self assert: (eliza welcomeMessage isMemberOf: ByteString)
+	self assert: (eliza welcomeMessage isEmpty) equals: false

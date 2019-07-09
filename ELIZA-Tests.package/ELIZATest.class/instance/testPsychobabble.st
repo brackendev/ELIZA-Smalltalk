@@ -1,3 +1,3 @@
 test
 testPsychobabble
-	self assert: (eliza psychobabble isMemberOf: OrderedDictionary)
+	self assert: eliza psychobabble isEmpty equals: false

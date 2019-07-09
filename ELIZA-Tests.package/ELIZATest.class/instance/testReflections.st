@@ -1,3 +1,3 @@
 test
 testReflections
-	self assert: (eliza reflections isMemberOf: OrderedDictionary)
+	self assert: eliza reflections isEmpty equals: false
