@@ -6,6 +6,6 @@ handleInput
 		ifTrue: [ ^ self ].
 
 	self addInputResponse: inputArea text.
-	self addELIZAResponse: (ELIZA responseTo: inputArea text).
+	self addELIZAResponse: (ELIZA respondTo: inputArea text).
 	
 	inputArea text: ''

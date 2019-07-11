@@ -2,4 +2,4 @@ I am ELIZA, an object based on an early natural language processing computer pro
 
 Example invocation:
 
-	ELIZA responseTo: 'Time for small talk'
+	ELIZA respondTo: 'Time for small talk'

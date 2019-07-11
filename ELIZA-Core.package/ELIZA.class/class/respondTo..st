@@ -1,3 +1,3 @@
 public
-responseTo: aString
+respondTo: aString
 	^ ELIZA new analyze: aString
