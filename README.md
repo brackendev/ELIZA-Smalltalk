@@ -37,7 +37,7 @@ Or evaluate:
 
 ```smalltalk
 "Retrieve an ELIZA response"
-ELIZA responseTo: 'Time for small talk'.
+ELIZA respondTo: 'Time for small talk'.
 ```
 
 ## Screenshot
