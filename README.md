@@ -51,7 +51,6 @@ Note: "You" dialog taken from Joseph Weizenbaum's [ELIZA--A Computer Program For
 * [Joseph Weizenbaum](https://en.wikipedia.org/wiki/Joseph_Weizenbaum) for the original [ELIZA](https://en.wikipedia.org/wiki/ELIZA).
 * [Evan Dempsey](https://www.smallsurething.com/about/) for the [ELIZA Python implementation](https://www.smallsurething.com/implementing-the-famous-eliza-chatbot-in-python/).
 * The [Pharo team](https://github.com/orgs/pharo-project/people) and [contributors](https://github.com/pharo-project/pharo/graphs/contributors) for [Pharo](http://pharo.org/), the pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback.
-* [Eliot Miranda](http://www.mirandabanda.org/cogblog/microbio/), the [OpenSmalltalk team](https://github.com/orgs/OpenSmalltalk/people), and [contributors](https://github.com/OpenSmalltalk/opensmalltalk-vm/graphs/contributors) for [OpenSmalltalk](https://github.com/OpenSmalltalk/opensmalltalk-vm) ([Cog](http://www.mirandabanda.org/cogblog/about-cog/)), the cross-platform virtual machine for Squeak, Pharo, Cuis, and Newspeak.
 
 ## Author
 
