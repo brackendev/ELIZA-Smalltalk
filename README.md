@@ -46,12 +46,6 @@ ELIZA respondTo: 'Time for small talk'.
 
 Note: "You" dialog taken from Joseph Weizenbaum's [ELIZA--A Computer Program For the Study of Natural Language Communication Between Man and Machine](http://www.universelle-automation.de/1966_Boston.pdf).
 
-## Acknowledgements
-
-* [Joseph Weizenbaum](https://en.wikipedia.org/wiki/Joseph_Weizenbaum) for the original [ELIZA](https://en.wikipedia.org/wiki/ELIZA).
-* [Evan Dempsey](https://www.smallsurething.com/about/) for the [ELIZA Python implementation](https://www.smallsurething.com/implementing-the-famous-eliza-chatbot-in-python/).
-* The [Pharo team](https://github.com/orgs/pharo-project/people) and [contributors](https://github.com/pharo-project/pharo/graphs/contributors) for [Pharo](http://pharo.org/), the pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback.
-
 ## Author
 
 [brackendev](https://www.github.com/brackendev)
