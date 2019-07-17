@@ -15,7 +15,7 @@ This implementation is based on [this Python implementation](https://www.smallsu
 ## Installation
 
 1. Install and setup [Pharo](http://pharo.org/).
-2. In a Pharo playground, evaluate:
+2. In a Playground, evaluate:
 
     ```smalltalk
     Metacello new 
@@ -26,7 +26,7 @@ This implementation is based on [this Python implementation](https://www.smallsu
 
 ## Example Usage
 
-In a Pharo playground, evaluate:
+In a Playground, evaluate:
 
 ```smalltalk
 "Start the ELIZA chat interface"
