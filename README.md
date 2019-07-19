@@ -1,7 +1,3 @@
-As far as I know, this is the first and only ELIZA on Smalltalk. If otherwise, please let me know.
-
-- - -
-
 ELIZA-Smalltalk
 ===============
 
