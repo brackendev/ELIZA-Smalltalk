@@ -17,6 +17,10 @@ This implementation is based on [this Python implementation](https://www.smallsu
     Metacello new 
       repository: 'github://brackendev/ELIZA-Smalltalk';
       baseline: 'ELIZA';
+      onConflict: [ :ex | ex useIncoming ];
+      onUpgrade: [ :ex | ex useIncoming ];
+      onDowngrade: [ :ex | ex useLoaded ];
+      ignoreImage;
       load.
     ```
 
