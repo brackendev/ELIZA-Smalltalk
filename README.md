@@ -10,19 +10,18 @@ This implementation is based on [this Python implementation](https://www.smallsu
 
 ## Installation
 
-1. Install and setup [Pharo](http://pharo.org/).
-2. In a Playground, evaluate:
+In a Playground, evaluate:
 
-    ```smalltalk
-    Metacello new 
-      repository: 'github://brackendev/ELIZA-Smalltalk';
-      baseline: 'ELIZA';
-      onConflict: [ :ex | ex useIncoming ];
-      onUpgrade: [ :ex | ex useIncoming ];
-      onDowngrade: [ :ex | ex useLoaded ];
-      ignoreImage;
-      load.
-    ```
+```smalltalk
+Metacello new 
+  repository: 'github://brackendev/ELIZA-Smalltalk';
+  baseline: 'ELIZA';
+  onConflict: [ :ex | ex useIncoming ];
+  onUpgrade: [ :ex | ex useIncoming ];
+  onDowngrade: [ :ex | ex useLoaded ];
+  ignoreImage;
+  load.
+```
 
 ## Example Usage
 
