@@ -4,5 +4,9 @@ defaultSpec
 	^ SpBoxLayout newVertical
 		add: #fieldOutput;
 		add: #fieldInput
-			withConstraints: [ :constraints | constraints height: 25 ];
+			withConstraints:
+			[ :constraints | 
+			constraints height: 25.
+			constraints padding: 5
+			];
 		yourself
