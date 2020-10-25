@@ -1,0 +1,3 @@
+spec accessing
+fieldInput
+	^ fieldInput

@@ -1,6 +1,6 @@
 private
 addResponse: aString
-	chatArea textArea text isEmpty
-		ifFalse: [ chatArea textArea appendText: String crlf ].
+	fieldOutput textArea text isEmpty
+		ifFalse: [ fieldOutput textArea appendText: String crlf ].
 
-	chatArea textArea appendText: aString
+	fieldOutput textArea appendText: aString

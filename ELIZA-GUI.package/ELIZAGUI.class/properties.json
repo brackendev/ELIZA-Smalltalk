@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "brackendev 7/2/2019 22:44",
-	"super" : "ComposablePresenter",
+	"super" : "SpPresenter",
 	"category" : "ELIZA-GUI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"chatArea",
-		"inputArea"
+		"fieldInput",
+		"fieldOutput"
 	],
 	"name" : "ELIZAGUI",
 	"type" : "normal"

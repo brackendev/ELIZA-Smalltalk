@@ -1,9 +1,8 @@
 specs
 defaultSpec
 	<spec: #default>
-	^ SpecLayout composed
-		newColumn: [ :row | 
-			row
-				newColumn: [ :column | column newRow: [ :r | r newColumn: #chatArea ] ];
-				newRow: #inputArea height: 25
-			]
+	^ SpBoxLayout newVertical
+		add: #fieldOutput;
+		add: #fieldInput
+			withConstraints: [ :constraints | constraints height: 25 ];
+		yourself
