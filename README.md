@@ -10,7 +10,7 @@ This implementation is based on [this Python implementation](https://www.smallsu
 
 ## Installation
 
-In a Playground, evaluate:
+In a Playground, _Do it_:
 
 ```smalltalk
 Metacello new 
@@ -25,14 +25,14 @@ Metacello new
 
 ## Example Usage
 
-In a Playground, evaluate:
+In a Playground, _Do it_:
 
 ```smalltalk
 "Start the ELIZA chat interface"
 ELIZAGUI open.
 ```
 
-Or evaluate:
+...or, _Do it_:
 
 ```smalltalk
 "Retrieve an ELIZA response"
