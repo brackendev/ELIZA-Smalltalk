@@ -1,3 +1,3 @@
 test
 testWelcomeMessage
-	self assert: (eliza welcomeMessage isEmpty) equals: false
+	self denyEmpty: eliza welcomeMessage

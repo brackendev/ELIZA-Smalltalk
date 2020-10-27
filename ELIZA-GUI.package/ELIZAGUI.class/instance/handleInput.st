@@ -2,8 +2,7 @@ private
 handleInput
 	| text |
 	text := fieldInput text trimBoth.
-	text isEmpty
-		ifTrue: [ ^ self ].
+	text ifEmpty: [ ^ self ].
 
 	self addInputResponse: text.
 	self addELIZAResponse: (ELIZA respondTo: text).

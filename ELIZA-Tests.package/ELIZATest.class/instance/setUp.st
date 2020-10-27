@@ -1,3 +1,4 @@
 running
 setUp
-eliza := ELIZA new.
+	super setUp.
+	eliza := ELIZA new
