@@ -14,7 +14,7 @@ In a Playground, _Do it_:
 
 ```smalltalk
 Metacello new 
-  repository: 'github://brackendev/ELIZA-Smalltalk';
+  repository: 'github://brackendev/ELIZA-Smalltalk/src';
   baseline: 'ELIZA';
   onConflict: [ :ex | ex useIncoming ];
   onUpgrade: [ :ex | ex useIncoming ];
