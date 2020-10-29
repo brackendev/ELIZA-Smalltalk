@@ -14,7 +14,7 @@ In a Playground, _Do it_:
 
 ```smalltalk
 Metacello new 
-  repository: 'github://brackendev/ELIZA-Smalltalk/src';
+  repository: 'github://brackendev/ELIZA-Smalltalk:v1.0.0/src';
   baseline: 'ELIZA';
   onConflict: [ :ex | ex useIncoming ];
   onUpgrade: [ :ex | ex useIncoming ];
@@ -32,7 +32,7 @@ In a Playground, _Do it_:
 ELIZAGUI open.
 ```
 
-...or, _Do it_:
+...or _Do it_:
 
 ```smalltalk
 "Retrieve an ELIZA response"
