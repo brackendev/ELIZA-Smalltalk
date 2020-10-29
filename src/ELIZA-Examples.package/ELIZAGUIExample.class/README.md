@@ -1,1 +1,0 @@
-I am ELIZAGUIExample, an object to show the capabilities of ELIZAGUI.

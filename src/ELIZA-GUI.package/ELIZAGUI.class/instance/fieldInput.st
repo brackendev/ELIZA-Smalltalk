@@ -1,3 +1,0 @@
-spec accessing
-fieldInput
-	^ fieldInput

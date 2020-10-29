@@ -1,1 +1,0 @@
-I am ELIZATest, a test class for testing the behavior of ELIZA.
