@@ -19,7 +19,6 @@ Metacello new
   onConflict: [ :ex | ex useIncoming ];
   onUpgrade: [ :ex | ex useIncoming ];
   onDowngrade: [ :ex | ex useLoaded ];
-  ignoreImage;
   load.
 ```
 
