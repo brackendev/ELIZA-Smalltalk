@@ -14,7 +14,7 @@ In a Playground, _Do it_:
 
 ```smalltalk
 Metacello new 
-  repository: 'github://brackendev/ELIZA-Smalltalk:v1.0.0/src';
+  repository: 'github://brackendev/ELIZA-Smalltalk:v1.1.0/src';
   baseline: 'ELIZA';
   load.
 ```
