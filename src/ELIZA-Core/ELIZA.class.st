@@ -15,14 +15,14 @@ Class {
 { #category : #public }
 ELIZA class >> respondTo: aString [
 
-	^ ELIZA new analyze: aString
+	^ self new analyze: aString
 ]
 
 { #category : #private }
 ELIZA >> analyze: aString [
 
-	cleanup := aString asLowercase trimRight: [ :c | c = $. ].
-	cleanup := cleanup trimRight: [ :c | c = $! ].
+	| cleanup |
+	cleanup := (aString asLowercase trimRight: [ :c | c = $. ]) trimRight: [ :c | c = $! ].
 
 	self psychobabble keysDo: [ :key | 
 		| rx |
@@ -332,6 +332,7 @@ ELIZA >> psychobabble: aKey [
 { #category : #private }
 ELIZA >> reflect: aString response: aResponse [
 
+	| oc |
 	oc := OrderedCollection new.
 
 	(self words: aString) do: [ :word | 
@@ -380,6 +381,7 @@ ELIZA >> welcomeMessage [
 { #category : #private }
 ELIZA >> words: aString [
 
+	| oc |
 	oc := OrderedCollection new.
 	aString regex: '\w+' matchesDo: [ :word | oc add: word ].
 	^ oc
