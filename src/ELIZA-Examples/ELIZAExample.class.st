@@ -9,6 +9,7 @@ Class {
 
 { #category : #example }
 ELIZAExample class >> exampleResponseTo [
+
 	<sampleInstance>
 	^ ELIZA respondTo: 'Time for small talk.'
 ]

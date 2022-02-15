@@ -9,43 +9,43 @@ Example invocation:
 Class {
 	#name : #ELIZA,
 	#superclass : #Object,
-	#category : 'ELIZA-Core'
+	#category : #'ELIZA-Core'
 }
 
 { #category : #public }
 ELIZA class >> respondTo: aString [
+
 	^ ELIZA new analyze: aString
 ]
 
 { #category : #private }
 ELIZA >> analyze: aString [
-	| cleanup |
+
 	cleanup := aString asLowercase trimRight: [ :c | c = $. ].
 	cleanup := cleanup trimRight: [ :c | c = $! ].
 
-	self psychobabble
-		keysDo:
-			[ :key | 
-			| rx |
-			rx := key asLowercase asRegex.
-			(rx matchesPrefix: cleanup)
-				ifTrue:
-					[ ^ rx subexpressionCount > 1
-						ifTrue:
-							[ | subexpression babble |
-							subexpression := rx subexpression: 2.
-							babble := self psychobabble: key.
-							self reflect: subexpression response: babble.
-							]
-						ifFalse: [ self reflect: cleanup response: (self psychobabble: key) ]
-					]
-			].
+	self psychobabble keysDo: [ :key | 
+		| rx |
+		rx := key asLowercase asRegex.
+		(rx matchesPrefix: cleanup) ifTrue: [ 
+			^ rx subexpressionCount > 1
+				  ifTrue: [ 
+					  | subexpression babble |
+					  subexpression := rx subexpression: 2.
+					  babble := self psychobabble: key.
+					  self reflect: subexpression response: babble
+					  ]
+				  ifFalse: [ 
+				  self reflect: cleanup response: (self psychobabble: key) ]
+			]
+		].
 
 	^ nil
 ]
 
 { #category : #private }
 ELIZA >> psychobabble [
+
 	| dict array |
 	dict := OrderedDictionary new.
 
@@ -159,7 +159,8 @@ ELIZA >> psychobabble [
 	array at: 1 put: 'You seem very certain.'.
 	array
 		at: 2
-		put: 'If I told you that it probably isn''t {0}, what would you feel?'.
+		put:
+		'If I told you that it probably isn''t {0}, what would you feel?'.
 	dict at: 'It is (.*)' put: array.
 
 	array := Array new: 3.
@@ -257,7 +258,7 @@ ELIZA >> psychobabble [
 	array
 		at: 4
 		put:
-			'Does your relationship with your father relate to your feelings today?'.
+		'Does your relationship with your father relate to your feelings today?'.
 	array
 		at: 5
 		put: 'Do you have trouble showing affection with your family?'.
@@ -270,7 +271,7 @@ ELIZA >> psychobabble [
 	array
 		at: 4
 		put:
-			'Does your relationship with your father relate to your feelings today?'.
+		'Does your relationship with your father relate to your feelings today?'.
 	array
 		at: 5
 		put: 'Do you have trouble showing affection with your family?'.
@@ -286,7 +287,7 @@ ELIZA >> psychobabble [
 	array
 		at: 5
 		put:
-			'How do you think your childhood experiences relate to your feelings today?'.
+		'How do you think your childhood experiences relate to your feelings today?'.
 	dict at: '(.*) child(.*)' put: array.
 
 	array := Array new: 4.
@@ -324,28 +325,28 @@ ELIZA >> psychobabble [
 
 { #category : #private }
 ELIZA >> psychobabble: aKey [
- ^ (self psychobabble at: aKey) shuffled at: 1.
 
+	^ (self psychobabble at: aKey) shuffled at: 1
 ]
 
 { #category : #private }
 ELIZA >> reflect: aString response: aResponse [
-	| oc |
+
 	oc := OrderedCollection new.
 
-	(self words: aString)
-		do: [ :word | 
-			self reflections
-				at: word asLowercase
-				ifPresent: [ oc add: (self reflections at: word asLowercase) ]
-				ifAbsent: [ oc add: word ]
-			].
+	(self words: aString) do: [ :word | 
+		self reflections
+			at: word asLowercase
+			ifPresent: [ oc add: (self reflections at: word asLowercase) ]
+			ifAbsent: [ oc add: word ]
+		].
 
 	^ aResponse copyReplaceAll: '{0}' with: (Character space join: oc)
 ]
 
 { #category : #private }
 ELIZA >> reflections [
+
 	| dict |
 	dict := OrderedDictionary new.
 	dict at: 'am' put: 'are'.
@@ -363,11 +364,11 @@ ELIZA >> reflections [
 	dict at: 'you' put: 'me'.
 	dict at: 'me' put: 'you'.
 	^ dict
-
 ]
 
 { #category : #private }
 ELIZA >> welcomeMessage [
+
 	| a |
 	a := Array new: 3.
 	a at: 1 put: 'Please tell me what''s been bothering you.'.
@@ -378,7 +379,7 @@ ELIZA >> welcomeMessage [
 
 { #category : #private }
 ELIZA >> words: aString [
-	| oc |
+
 	oc := OrderedCollection new.
 	aString regex: '\w+' matchesDo: [ :word | oc add: word ].
 	^ oc
