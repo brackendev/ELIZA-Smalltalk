@@ -5,7 +5,7 @@ ELIZA-Smalltalk
 
 This implementation is based on [this Python implementation](https://www.smallsurething.com/implementing-the-famous-eliza-chatbot-in-python/) and [elizabot.js](http://www.masswerk.at/elizabot/) (for the welcome messages). There are similar implementations for [Go](https://github.com/kennysong/goeliza) and [Swift](https://github.com/kennysong/SwiftEliza).
 
-* [Pharo 8.0](https://www.pharo.org/) reference platform ([Spec2](https://astares.blogspot.com/2019/08/spec2.html) UI framework).
+* [Pharo 9.0](https://www.pharo.org/) reference platform.
 * Examples and tests included.
 
 ## Installation
@@ -16,9 +16,6 @@ In a Playground, _Do it_:
 Metacello new 
   repository: 'github://brackendev/ELIZA-Smalltalk:v1.0.0/src';
   baseline: 'ELIZA';
-  onConflict: [ :ex | ex useIncoming ];
-  onUpgrade: [ :ex | ex useIncoming ];
-  onDowngrade: [ :ex | ex useLoaded ];
   load.
 ```
 
@@ -43,10 +40,6 @@ ELIZA respondTo: 'Time for small talk'.
 <img src="https://github.com/brackendev/ELIZA-Smalltalk/raw/master/screenshot.png" alt="Screenshot" width="400"/>
 
 Note: "You" dialog taken from Joseph Weizenbaum's [ELIZA--A Computer Program For the Study of Natural Language Communication Between Man and Machine](http://www.universelle-automation.de/1966_Boston.pdf).
-
-## TODO
-
-- [ ] Support Pharo 9 (when stable)
 
 ## Author
 
