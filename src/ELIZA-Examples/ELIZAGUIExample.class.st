@@ -9,6 +9,7 @@ Class {
 
 { #category : #example }
 ELIZAGUIExample class >> example [
+
 	<sampleInstance>
 	ELIZAGUI open
 ]
