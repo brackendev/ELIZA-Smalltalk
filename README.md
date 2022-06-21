@@ -5,7 +5,7 @@ ELIZA-Smalltalk
 
 This implementation is based on [this Python implementation](https://web.archive.org/web/20200424191830/https://www.smallsurething.com/implementing-the-famous-eliza-chatbot-in-python/) and [elizabot.js](http://www.masswerk.at/elizabot/) (for the welcome messages). There are similar implementations for [Go](https://github.com/kennysong/goeliza) and [Swift](https://github.com/kennysong/SwiftEliza).
 
-* [Pharo 10.0](https://www.pharo.org/) reference platform.
+* [Pharo 10](https://www.pharo.org/) reference platform.
 * Examples and tests included.
 
 ## Installation
