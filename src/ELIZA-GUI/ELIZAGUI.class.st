@@ -16,8 +16,8 @@ Class {
 	#category : #'ELIZA-GUI'
 }
 
-{ #category : #specs }
-ELIZAGUI class >> defaultSpec [
+{ #category : #layout }
+ELIZAGUI class >> defaultLayout [
 
 	<spec: #default>
 	^ SpBoxLayout newTopToBottom
@@ -34,7 +34,7 @@ ELIZAGUI class >> open [
 
 	| gui |
 	gui := self new
-		       openWithSpec;
+		       open;
 		       addELIZAResponse: ELIZA new welcomeMessage.
 	gui fieldInput takeKeyboardFocus
 ]
@@ -82,11 +82,11 @@ ELIZAGUI >> fileInput: anObject [
 ]
 
 { #category : #private }
-ELIZAGUI >> handleInput [
+ELIZAGUI >> handleInput: aString [
 
 	| text |
-	text := fieldInput text trimBoth.
-	text ifEmpty: [ ^ self ].
+	text := aString trimBoth.
+	text ifEmpty: [ ^ nil ].
 
 	self addInputResponse: text.
 	self addELIZAResponse: (ELIZA respondTo: text).
@@ -102,7 +102,7 @@ ELIZAGUI >> initializePresenters [
 		               enabled: false.
 
 	fieldInput := self newTextInput
-		              whenSubmitDo: [ self handleInput ];
+		              whenSubmitDo: [ :text | self handleInput: text ];
 		              placeholder: 'Say something'.
 
 	self focusOrder add: fieldInput
