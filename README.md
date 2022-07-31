@@ -28,7 +28,7 @@ In a Playground, _Do it_:
 ELIZAGUI open.
 ```
 
-...or _Do it_:
+...or:
 
 ```smalltalk
 "Retrieve an ELIZA response"
