@@ -28,7 +28,7 @@ In a Playground, _Do it_:
 ELIZAGUI open.
 ```
 
-...or _Do it_:
+...or:
 
 ```smalltalk
 "Retrieve an ELIZA response"
@@ -60,5 +60,5 @@ ELIZA-Smalltalk is released under the MIT license. See the LICENSE file for more
 * [ELIZA](https://en.wikipedia.org/wiki/ELIZA)
 * [ELIZA effect](https://en.wikipedia.org/wiki/ELIZA_effect)
 * [Implementing the Famous ELIZA Chatbot in Python](https://www.smallsurething.com/implementing-the-famous-eliza-chatbot-in-python/)
-* [The Genealogy of Eliza](http://elizagen.org/index.html)
+* [The Genealogy of Eliza](https://sites.google.com/view/elizagen-org)
 * [elizabot.js](http://www.masswerk.at/elizabot/)
