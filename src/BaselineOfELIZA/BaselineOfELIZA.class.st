@@ -35,6 +35,6 @@ BaselineOfELIZA >> baseline: spec [
 			with: [ spec requires: #( 'ELIZA' ) ].
 		spec
 			package: 'ELIZA-Examples'
-			with: [ spec requires: #( 'ELIZA' 'ELIZA-GUI' ) ]
+			with: [ spec requires: #( 'ELIZA' ) ]
 		]
 ]
