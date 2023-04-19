@@ -1,5 +1,22 @@
 "
-I am ELIZATest, a test class for testing the behavior of ELIZA.
+Class: ELIZATest
+
+I represent a test class for the ELIZA chatbot implementation.
+
+Responsibilities:
+- I execute test cases to ensure the proper functioning of the ELIZA chatbot.
+- I validate the chatbot's responses against expected outputs.
+- I help maintain the quality and reliability of the ELIZA chatbot implementation.
+
+Collaborators:
+- ELIZA: I interact with the ELIZA chatbot class to test its methods and responses.
+- TestRunner: I work with the TestRunner to execute and report the results of my test cases.
+
+Example:
+- ""Running ELIZATest to verify the correctness of the ELIZA chatbot's responses and behavior.""
+
+
+[This comment was automatically created with https://github.com/brackendev/OpenAI-Pharo]
 "
 Class {
 	#name : #ELIZATest,
