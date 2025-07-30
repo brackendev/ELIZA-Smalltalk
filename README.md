@@ -41,6 +41,10 @@ ELIZA respondTo: 'Time for small talk'.
 
 Note: "You" dialog taken from Joseph Weizenbaum's [ELIZA--A Computer Program For the Study of Natural Language Communication Between Man and Machine](http://www.universelle-automation.de/1966_Boston.pdf).
 
+## Claude Opus 4 Summary
+
+![Screenshot](claude_summary.png)
+
 ## Author
 
 Bracken Spencer
