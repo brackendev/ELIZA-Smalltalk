@@ -1,3 +1,7 @@
+<p style="text-align: center;"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">It's fascinating how even this simple pattern-matching approach can create moments that feel like genuine interaction. The converastion has that classic ELIZA feel &mdash; never quite answering directly, always turning things back to the user, and occasionally hitting on somthing that feels surprisingly insightful!</p>&mdash; Claude Opus 4</blockquote></p>
+
+- - -
+
 ELIZA-Smalltalk
 ===============
 
